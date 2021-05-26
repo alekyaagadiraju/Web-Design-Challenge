@@ -9,10 +9,10 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
 
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
 
   </head>
 
@@ -20,7 +20,7 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
 
-        <!-- Toggle -->
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -30,24 +30,24 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Latitude</a>
+              <a class="navbar-brand" href="../index.html" id="logo">Latitude</a>
             </div>
           </div>
 
-          <!-- Collect nav links for toggling -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                 <li><a href="Assets/Images/Temperature.png">Max Temperature</a></li>
-                  <li><a href="Assets/Images/Humidity.png">Humidity</a></li>
-                  <li><a href="Assets/Images/Cloudiness.png">Cloudiness</a></li>
-                  <li><a href="Assets/Images/WindSpeed.png">Wind Speed</a></li>
+                 <li><a href="maxtemp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="wind.html">Wind Speed</a></li>
                 </ul>
               </li>
-              <li><a href="comparison.html">Comparison</a></li>
-              <li><a href="data.html">Data</a></li>
+              <li><a href="../comparison.html">Comparison</a></li>
+              <li><a href="../data.html">Data</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
@@ -59,33 +59,30 @@
       <section class="row">
         <div class="col-md-8">
           <article class="description-content">
-            <h1 class="description-header">Summary: Latitude vs. X</h1>
+            <h1 class="description-header">Max Temp</h1>
             <hr class="description-hr"/>
-            <img src="assets/images/Fig1.png" alt="" id="description-image"/>
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            <img src="../Assets/Images/Temperature.png" alt="" class="img-responsive"/>
+            <p>There is a strong relationship between latitude and Maximum Temperature. Temperature increases until a Latitude of 0 and then decreases in a downward curve pattern.</p>
           </article>
         </div>
         <div class="col-md-4">
 
-          <!-- Start of Visualizations -->
+          <!-- Start of Visualizations imageNav Area -->
           <section id="imageNav-area">
             <div class="imageNav-content">
               <h2 class="imageNav-header">Visualizations</h2>
               <hr />
               <div id="images">
-                <a href="visualizations/maxtemp.html"><img src="Assets/Images/Temperature.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
-                <a href="visualizations/humidity.html"><img src="Assets/Images/Humidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
-                <a href="visualizations/cloudiness.html"><img src="Assets/Images/Cloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
-                <a href="visualizations/windspeed.html"><img src="Assets/Images/WindSpeed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+                <a href="maxtemp.html"><img src="../Assets/Images/Temperature.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                <a href="humidity.html"><img src="../Assets/Images/Humidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="cloudiness.html"><img src="../Assets/Images/Cloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo active"></a>
+                <a href="windspeed.html"><img src="../Assets/Images/WindSpeed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
               </div>
             </div>
           </section>
-
         </div>
       </section>
     </div>
-    <!-- End of container -->
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
